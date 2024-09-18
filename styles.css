@@ -1,6 +1,7 @@
 body{
     background: #FFFFFF;
     font-family: "Roboto", sans-serif;
+    color: #434455
 }
 .logo{
     font-family: "Raleway", sans-serif;
@@ -61,7 +62,11 @@ body{
     color: #FFFFFF;
     text-align: center;
 }
-.first-section button{
+ button{
+    cursor: pointer;
+
+}
+.button-item{
     background-color:#4D5AE5 ;
     font-weight:500px;
     font-size :16px;
@@ -69,7 +74,12 @@ body{
     letter-spacing: 4%;
     color: #FFFFFF;
 }
-.second-section h3 {
+.button-item :hover
+.button-item:focus
+{
+   background-color:#404BBF;
+}
+.h3-title  {
     font-weight: 500px;
     font-size: 20px;
     line-height: 24px;
@@ -79,7 +89,7 @@ body{
 .second-section li{
     list-style-type: none;
 }
-.second-section p {
+.p-content{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -97,18 +107,22 @@ body{
     letter-spacing: 2%;
     color: #2E2F42;
     text-align: center;
+    text-transform: capitalize;
+}
+.li-our-name{
+    background-color: #FFFFFF;
 }
 .third-section li {
     list-style-type: none;
 }
-.third-section li h3{
+.feature{
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 2%;
     color: #2E2F42;
 }
-.third-section li p {
+.came {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -122,25 +136,26 @@ body{
     letter-spacing: 2%;
     color: #2E2F42;
     text-align: center;
+    text-transform: capitalize;
 }
 .fourth-section li {
     list-style-type: none;
 }
-.fourth-section li h3 {
+.still {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 2%;
     color: #2E2F42;
 }
-.fourth-section li p {
+.contect {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 2%;
     color: #434455;
 }
-footer {
+.logoo{
     background-color: #2E2F42;
 }
 .logo-two {
@@ -161,9 +176,9 @@ footer {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 3%;
-    color: #F4F4FD;
+    color:  #F4F4FD
 }
-footer p{
+.logo-p{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
