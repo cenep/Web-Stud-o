@@ -14,6 +14,7 @@ body{
     color: #4D5AE5;
     text-decoration: none;
 }
+
 .spa{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -21,7 +22,7 @@ body{
     color: #2E2F42;
     text-decoration: none;
 }
-.page-menu-list a{
+.navbar{
     text-decoration: none;
     color: #2E2F42;
     font-weight: 500;
@@ -29,9 +30,11 @@ body{
     line-height: 24px;
     letter-spacing: 2%;
 }
-.page-menu-list li{
+.navbar{
     list-style-type: none;
 }
+
+
 .page-address-list a{
     text-decoration: none;
     color:#434455 ;
@@ -54,13 +57,13 @@ body{
 .first-section {
     background-color: #2E2F42;
 }
-.first-section h1{
+.h1-title{
     font-weight: 700;
     font-size: 56px;
-    line-height: 60px;
-    letter-spacing: 2%;
-    color: #FFFFFF;
-    text-align: center;
+    line-height: 1.07;
+    letter-spacing: 0.02;
+    color:#FFFFFF;
+    text-align:  center;
 }
  button{
     cursor: pointer;
@@ -68,11 +71,12 @@ body{
 }
 .button-item{
     background-color:#4D5AE5 ;
-    font-weight:500px;
+    font-weight: 500px;
     font-size :16px;
     line-height: 24px;
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
     color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
 }
 .button-item :hover
 .button-item:focus
@@ -82,8 +86,8 @@ body{
 .h3-title  {
     font-weight: 500px;
     font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 2%;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     color: #2E2F42;
 }
 .second-section li{
@@ -92,8 +96,8 @@ body{
 .p-content{
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color:#434455;
 }
 .third-section{
@@ -103,8 +107,8 @@ body{
 .our-name {
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 2%;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
     color: #2E2F42;
     text-align: center;
     text-transform: capitalize;
@@ -115,6 +119,7 @@ body{
 .third-section li {
     list-style-type: none;
 }
+
 .feature{
     font-weight: 500;
     font-size: 20px;
@@ -126,14 +131,14 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     color:#434455 ;
 }
 .our-name-two {
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 2%;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
     color: #2E2F42;
     text-align: center;
     text-transform: capitalize;
@@ -145,14 +150,14 @@ body{
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     color: #2E2F42;
 }
 .contect {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     color: #434455;
 }
 .logoo{
@@ -163,8 +168,8 @@ body{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 3%;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     color: #4D5AE5;
     text-decoration: none;
     text-transform: uppercase;
@@ -182,7 +187,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02;
     color: #F4F4FD;
 }
 
