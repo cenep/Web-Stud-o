@@ -33,6 +33,9 @@ body{
 .navbar{
     list-style-type: none;
 }
+.navbar:hover{
+    color: #404BBF;
+}
 
 
 .page-address-list a{
