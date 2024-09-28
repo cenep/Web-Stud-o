@@ -84,7 +84,7 @@ body{
 .button-item :hover
 .button-item:focus
 {
-   background-color:#404BBF;
+ color:#404BBF;
 }
 .h3-title  {
     font-weight: 500px;
