@@ -70,7 +70,6 @@ body{
 }
  button{
     cursor: pointer;
-
 }
 .button-item{
     background-color:#4D5AE5 ;
@@ -81,10 +80,9 @@ body{
     color: #FFFFFF;
     font-family: "Roboto", sans-serif;
 }
-.button-item :hover
-.button-item:focus
+button:hover
 {
- color:#404BBF;
+   background-color: #404BBF;
 }
 .h3-title  {
     font-weight: 500px;
