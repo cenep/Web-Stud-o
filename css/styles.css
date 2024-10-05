@@ -1,18 +1,47 @@
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+
 body{
     background: #FFFFFF;
     font-family: "Roboto", sans-serif;
     color: #434455
+}
+img{ 
+    display: block;
+}
+.page-header{
+    border-bottom: 1px solid #E7E9FC;
+}
+.header_container{
+    display: flex;
+}
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header_nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logo{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 18px;
-    line-height:21px;
-    letter-spacing: 3%;
+    line-height:1.17;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
     text-decoration: none;
+    margin-right: 76px;
 }
 
 .spa{
@@ -23,42 +52,63 @@ body{
     text-decoration: none;
 }
 .navbar{
+    display: flex;
+    gap: 40px;
+}
+ .nav-list__nav-item .navbar-item{
     text-decoration: none;
     color: #2E2F42;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
+    line-height: 1.5;
+    letter-spacing: 0.03;
+    padding: 24px 0;
 }
 .navbar{
     list-style-type: none;
 }
-.navbar:hover{
+.navbar-item:hover,
+.navbar-item:focus
+{
     color: #404BBF;
 }
 
 
-.page-address-list a{
+.link{
     text-decoration: none;
     color:#434455 ;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02;
 }
-.page-menu-list li :hover{
+.contact{
+  font-style: normal;
+  display: flex;
+  margin-left: auto;
+}
+.contact-list{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.contact :hover{
     color: #404BBF;
 }
 
-.page-address-list li{
-    list-style-type: none;
-}
-.page-address-list li :hover {
-    color:#404BBF;
-}
 
 .first-section {
     background-color: #2E2F42;
+    padding: 188px 0;
+}
+.first-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .h1-title{
     font-weight: 700;
@@ -67,8 +117,9 @@ body{
     letter-spacing: 0.02;
     color:#FFFFFF;
     text-align:  center;
+    max-width: 496px;
 }
- button{
+ .button{
     cursor: pointer;
 }
 .button-item{
@@ -79,6 +130,12 @@ body{
     letter-spacing: 0.04em;
     color: #FFFFFF;
     font-family: "Roboto", sans-serif;
+    display: block;
+    min-width: 169px;
+    border: none;
+    border-radius: 4px;
+    height: 56px;
+
 }
 button:hover
 {
@@ -90,11 +147,32 @@ button:hover
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
-.second-section li{
-    list-style-type: none;
+.second-section{
+    padding: 120 px 0; 
 }
-.p-content{
+.section-section_list{
+    display: flex;
+    gap: 24px;
+}
+.second-section__list-item {
+    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
+  } 
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+.second-section .p-contect{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -103,6 +181,7 @@ button:hover
 }
 .third-section{
     background-color:#F4F4FD ;
+    padding: 129px 0;
 
 }
 .our-name {
@@ -113,20 +192,44 @@ button:hover
     color: #2E2F42;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
-.li-our-name{
-    background-color: #FFFFFF;
+.our-name_list{
+    display: flex;
+    gap: 24px;
+}
+.our-name_list.li-our-name{
+    width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+.li-our-name_container{
+    padding: 32px 0;
+}
+.our-name_list .feature{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+.our-name_list .came{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 .third-section li {
     list-style-type: none;
 }
-
-.feature{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 2%;
-    color: #2E2F42;
+.fourth-section{
+    padding: 120px 0;
 }
 .came {
     font-weight: 400;
@@ -143,16 +246,33 @@ button:hover
     color: #2E2F42;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
+.our-name-two_list{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.our-name-two_list .list-item{
+    width: calc((100% - 48px) / 3);
+}
+.list-item_container{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
 .fourth-section li {
     list-style-type: none;
 }
-.still {
+.first-section.still {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 .contect {
     font-weight: 400;
@@ -163,6 +283,7 @@ button:hover
 }
 .logoo{
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 .logo-two {
     font-family: "Raleway", sans-serif;
@@ -174,6 +295,8 @@ button:hover
     color: #4D5AE5;
     text-decoration: none;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .spa-two {
     font-family: "Raleway", sans-serif;
@@ -190,6 +313,7 @@ button:hover
     line-height: 24px;
     letter-spacing: 0.02;
     color: #F4F4FD;
+    max-width: 264px;
 }
 
 
